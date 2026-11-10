@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<a href="{{route('announcements.index')}}">← Back</a><article class="bg-white p-8 rounded-xl mt-4"><h1 class="text-3xl font-bold">{{$announcement->title}}</h1>@if($announcement->image)<img class="w-full max-h-96 object-cover my-6" src="{{asset('storage/'.$announcement->image)}}" alt="">@endif<p class="whitespace-pre-line mt-4">{{$announcement->content}}</p></article>@endsection

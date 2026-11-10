@@ -1,0 +1,12 @@
+name: the_brew_box
+description: THE BREW BOX customer mobile app
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+flutter:
+  uses-material-design: true

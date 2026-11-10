@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<h1 class="text-3xl font-bold mb-5">Create Announcement</h1><form enctype="multipart/form-data" method="POST" action="{{ route('admin.announcements.store') }}">@include('admin.announcements.form')</form>@endsection

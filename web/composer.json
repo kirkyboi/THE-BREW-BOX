@@ -1,0 +1,21 @@
+{
+  "name": "the-brew-box/web",
+  "type": "project",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^12.0",
+    "laravel/sanctum": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php artisan package:discover --ansi"
+    ]
+  }
+}

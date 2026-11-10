@@ -1,0 +1,58 @@
+# =====================================
+# THE BREW BOX - Git Ignore
+# Laravel 12 + Flutter
+# =====================================
+
+# Laravel environment and secrets
+web/.env
+web/.env.*
+!web/.env.example
+web/vendor/
+web/node_modules/
+web/public/storage
+web/storage/*.key
+web/storage/logs/*
+web/storage/framework/cache/*
+web/storage/framework/sessions/*
+web/storage/framework/views/*
+web/bootstrap/cache/*.php
+web/.phpunit.result.cache
+
+# Local databases and backups
+*.sqlite
+*.sqlite3
+*.sql
+*.sql.gz
+*.bak
+
+# Flutter / Dart
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/coverage/
+
+# Android
+mobile/android/local.properties
+mobile/android/key.properties
+*.jks
+*.keystore
+
+# iOS / macOS
+mobile/ios/Pods/
+mobile/ios/Flutter/ephemeral/
+mobile/macos/Flutter/ephemeral/
+
+# IDE / operating system
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

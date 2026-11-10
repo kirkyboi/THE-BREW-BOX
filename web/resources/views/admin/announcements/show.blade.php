@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<h1 class='text-3xl font-bold'>{{$announcement->title}}</h1><p class='my-4 whitespace-pre-line'>{{$announcement->content}}</p><a href='{{route('admin.announcements.index')}}'>Back</a>@endsection
